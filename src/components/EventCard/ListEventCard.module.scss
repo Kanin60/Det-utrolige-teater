@@ -1,0 +1,35 @@
+@import url('../../globalStyling.scss');
+
+.listeventcard{ 
+    height: 90px;
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 4fr 2fr 2fr;
+    align-items: center;
+    justify-items: center;
+    border: 1px solid var(--brown);
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: 3px solid var(--brown);
+    }
+    h2{
+        font-family: var(--title);
+        font-size: 34px;
+        color: var(--gold);
+        font-weight: 300;
+        text-align: center;
+    }
+    div{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        p,b{
+            font-family: var(--text);
+            color: var(--darkgrey);
+        }
+    }
+}

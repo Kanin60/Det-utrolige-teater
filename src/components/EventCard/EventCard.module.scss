@@ -1,0 +1,53 @@
+@import url('../../globalStyling.scss');
+
+.eventcard{
+    width: 100%;
+    border: 2px solid var(--brown);
+    figure{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        align-items: end;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border: 7px solid var(--brown);
+        }
+        figcaption{
+            text-align: end;
+            margin: 20px 20px 40px 20px;
+            h2{
+                font-family: var(--title);
+                font-size: 34px;
+                color: var(--gold);
+                margin-top: 40px;
+                font-weight: 300;
+            }
+            p, b{
+                font-family: var(--text);
+                color: var(--darkgrey);
+                margin-top: 10px;
+            }
+            p{
+                text-transform: uppercase;
+            }
+            p:nth-child(4){
+                font-size: 25px;
+                margin-bottom: 10px;
+            }
+            b{
+                border-bottom: 1px solid var(--black);
+                font-size: 18px;
+            }
+            div{
+                display: flex;
+                justify-content: flex-end;
+                button{
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
+

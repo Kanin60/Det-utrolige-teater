@@ -1,0 +1,123 @@
+@import url('../../globalStyling.scss');
+
+.detailspage{
+    border: 2px solid var(--brown);
+    max-width: 1200px;
+    margin: auto;
+    img{
+        width: 100%;
+        border: 15px solid var(--brown);
+    }
+    .detailswrapper{
+        padding: 0 20px 0 20px;
+        h2{
+            font-family: var(--title);
+            font-size: 44px;
+            color: var(--gold);
+            margin: 0 0px 20px 0px;
+            font-weight: 300;
+        }
+        p, b{
+            font-family: var(--text);
+            color: var(--darkgrey);
+            margin: 10px 0px 20px 0px;
+            text-transform: uppercase;
+        }
+        p:nth-child(5){
+            text-transform: none;
+            text-align: justify;
+        }
+        p:nth-child(7){
+            font-size: 20px;
+        }
+        b{
+            font-size: 18px;
+        }
+        .datepricewrapper{
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid var(--grey);
+            p{
+                font-family: var(--text);
+                color: var(--darkgrey);
+                font-size: 20px;
+            }
+        }
+        .titlewrapper{
+            display: grid;
+            grid-template-columns: 7fr 1fr;
+            align-items: center;
+        }
+        .smallactorcard{
+            padding: 0 20px 20px 20px;
+            border-bottom: 2px dashed var(--brown);
+            .actorcardgrid{
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                gap: 20px;
+                figure{
+                    border: 2px solid var(--brown);
+                }
+                img{
+                    border: none;
+                }
+                p{
+                    a{
+                        text-align: center;
+                        text-decoration: none;
+                        font-family: var(--text);
+                        color: var(--gold);
+                    }
+                }
+            }
+        }
+        .review{
+            p{
+                font-family: var(--text);
+                color: var(--darkgrey);
+                font-size: 20px;
+                margin: 10px 20px 20px 20px;
+            }
+        }
+    }
+}
+
+.detailsactorpage{
+    width: 1200px;
+    margin: auto;
+    margin-bottom: 40px;
+    display: grid;
+    justify-items: end;
+    h2{
+        font-family: var(--title);
+        font-size: 40px;
+        color: var(--gold);
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+    figure{
+        margin-bottom: 20px;
+        padding: 20px;
+        border: 1px solid var(--brown);
+        div{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px;
+            figcaption{
+                h3{
+                    font-family: var(--text);
+                    font-size: 26px;
+                    color: var(--grey);
+                    font-weight: 300;
+                    text-transform: uppercase;
+                }
+                p{
+                    font-family: var(--text);
+                    color: var(--gold);
+                    text-align: justify;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

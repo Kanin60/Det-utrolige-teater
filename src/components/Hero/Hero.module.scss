@@ -1,0 +1,43 @@
+@import url('../../globalStyling.scss');
+
+.hero{
+    border: 2px solid var(--brown);
+    width: 1200px;
+    margin: auto;
+    margin-bottom: 40px;
+    figure{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: end;
+        img{
+            width: 100%;
+            border: 7px solid var(--brown);
+        }
+        figcaption{
+            text-align: end;
+            margin: 20px 20px 40px 20px;
+            h2{
+                font-family: var(--title);
+                font-size: 44px;
+                color: var(--gold);
+                margin-top: 40px;
+                font-weight: 300;
+            }
+            p, b{
+                font-family: var(--text);
+                color: var(--darkgrey);
+                margin-top: 10px;
+            }
+            p{
+                text-transform: uppercase;
+            }
+            p:nth-child(4){
+                font-size: 25px;
+            }
+            b{
+                border-bottom: 1px solid var(--black);
+                font-size: 18px;
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+@import url('../../globalStyling.scss');
+
+.button{
+    button{
+        border: none;
+        padding: 15px;
+        a{
+            text-transform: uppercase;
+            font-size: 18px;
+            color: var(--white);
+            text-decoration: none;
+        }
+    }
+}
